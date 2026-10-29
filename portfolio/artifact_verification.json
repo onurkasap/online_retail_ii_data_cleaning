@@ -1,0 +1,254 @@
+{
+  "artifacts": {
+    "portfolio/client_delivery_guide.md": {
+      "bytes": 6420,
+      "sha256": "dfc0136c0bfb1372d78476949e24765c80a01c22101a1510ee4a8d2d97973d42"
+    },
+    "portfolio/data_dictionary.xlsx": {
+      "bytes": 9583,
+      "sha256": "6379d290139cbeeb8ddd362475a37f411e56d2c1ccbad157c28c8e2ffd41a849"
+    },
+    "portfolio/portfolio_case_study.md": {
+      "bytes": 3735,
+      "sha256": "2e2e2525e7f54aa3e73a1fd3a768350f42e26a72d005f4ad41c27602d90cc9d6"
+    },
+    "portfolio/sample_cleaned_data.xlsx": {
+      "bytes": 149096,
+      "sha256": "2e2c8d72143298e5beaab137a8b8a28f2b1c6b6338420c7fe8d892b3cb74fefc"
+    },
+    "reports/client_summary.pdf": {
+      "bytes": 114165,
+      "sha256": "471fd524197b7eb9c0dee0ffa68aa2e2479f04e0cc1fc43c28c45c99096622f7"
+    },
+    "reports/data_quality_comparison.png": {
+      "bytes": 153558,
+      "sha256": "59b00fedcc172b0784af0337470fa827af36b282424f6e03e125ccaaa5680e6a"
+    }
+  },
+  "checks": {
+    "client_delivery_guide.md_readable": true,
+    "dictionary_column_count": 33,
+    "dictionary_covers_actual_schema": true,
+    "excel_identifier_cells_are_text": true,
+    "no_full_csv_in_portfolio": true,
+    "pdf_three_readable_pages": true,
+    "pdf_verified_counts_present": true,
+    "png_dimensions": [
+      2160,
+      1476
+    ],
+    "portfolio_case_study.md_readable": true,
+    "sample_all_columns": true,
+    "sample_at_most_1000": true,
+    "sample_covers_present_quality_flags": true,
+    "sample_flags_match_csv": true,
+    "sample_lineage_matches_csv_selection": true,
+    "sample_no_formula_cells": true,
+    "sample_rows": 805,
+    "sample_source_values_match_csv": true
+  },
+  "dependency_versions": {
+    "Pillow": "13.0.0",
+    "matplotlib": "3.11.2",
+    "openpyxl": "3.1.5",
+    "pandas": "3.1.0",
+    "pypdf": "6.21.4"
+  },
+  "method": "Artifact checks executed by src/build_portfolio.py; recorded pytest counts are from existing final_verification_report.md, not a new pytest run.",
+  "metrics": {
+    "by_worksheet": {
+      "Year 2009-2010": 525461,
+      "Year 2010-2011": 541910
+    },
+    "cleaned_rows": 1067371,
+    "columns": [
+      "source_invoice_no",
+      "source_stock_code",
+      "source_description",
+      "source_quantity",
+      "source_invoice_date",
+      "source_unit_price",
+      "source_customer_id",
+      "source_country",
+      "source_worksheet",
+      "source_excel_row",
+      "source_row_id",
+      "invoice_no",
+      "stock_code",
+      "description",
+      "quantity",
+      "invoice_date",
+      "unit_price",
+      "customer_id",
+      "country",
+      "exact_duplicate_flag",
+      "description_missing_flag",
+      "customer_id_missing_flag",
+      "cancellation_coded_flag",
+      "negative_quantity_flag",
+      "zero_quantity_flag",
+      "zero_unit_price_flag",
+      "negative_unit_price_flag",
+      "invalid_quantity_flag",
+      "invalid_unit_price_flag",
+      "invalid_invoice_date_flag",
+      "required_field_review_flag",
+      "transaction_status",
+      "line_total"
+    ],
+    "duplicate_occurrences_after_first": 12133,
+    "examples": {
+      "cancellation_coded_flag": "False",
+      "country": "United Kingdom",
+      "customer_id": "13085",
+      "customer_id_missing_flag": "False",
+      "description": "15CM CHRISTMAS GLASS BALL 20 LIGHTS",
+      "description_missing_flag": "False",
+      "exact_duplicate_flag": "False",
+      "invalid_invoice_date_flag": "False",
+      "invalid_quantity_flag": "False",
+      "invalid_unit_price_flag": "False",
+      "invoice_date": "2009-12-01 07:45:00",
+      "invoice_no": "489434",
+      "line_total": "83.4",
+      "negative_quantity_flag": "False",
+      "negative_unit_price_flag": "False",
+      "quantity": "12",
+      "required_field_review_flag": "False",
+      "source_country": "United Kingdom",
+      "source_customer_id": "13085.0",
+      "source_description": "15CM CHRISTMAS GLASS BALL 20 LIGHTS",
+      "source_excel_row": "2",
+      "source_invoice_date": "2009-12-01 07:45:00",
+      "source_invoice_no": "489434",
+      "source_quantity": "12",
+      "source_row_id": "Year 2009-2010:2",
+      "source_stock_code": "85048",
+      "source_unit_price": "6.95",
+      "source_worksheet": "Year 2009-2010",
+      "stock_code": "85048",
+      "transaction_status": "normal_sale",
+      "unit_price": "6.95",
+      "zero_quantity_flag": "False",
+      "zero_unit_price_flag": "False"
+    },
+    "excluded": 25701,
+    "flags": {
+      "cancellation_coded_flag": 19494,
+      "customer_id_missing_flag": 243007,
+      "description_missing_flag": 4382,
+      "exact_duplicate_flag": 23430,
+      "invalid_invoice_date_flag": 0,
+      "invalid_quantity_flag": 0,
+      "invalid_unit_price_flag": 0,
+      "negative_quantity_flag": 22950,
+      "negative_unit_price_flag": 5,
+      "required_field_review_flag": 0,
+      "zero_quantity_flag": 0,
+      "zero_unit_price_flag": 6202
+    },
+    "flags_by_worksheet": {
+      "Year 2009-2010": {
+        "cancellation_coded_flag": 10206,
+        "customer_id_missing_flag": 107927,
+        "description_missing_flag": 2928,
+        "exact_duplicate_flag": 13283,
+        "invalid_invoice_date_flag": 0,
+        "invalid_quantity_flag": 0,
+        "invalid_unit_price_flag": 0,
+        "negative_quantity_flag": 12326,
+        "negative_unit_price_flag": 3,
+        "required_field_review_flag": 0,
+        "zero_quantity_flag": 0,
+        "zero_unit_price_flag": 3687
+      },
+      "Year 2010-2011": {
+        "cancellation_coded_flag": 9288,
+        "customer_id_missing_flag": 135080,
+        "description_missing_flag": 1454,
+        "exact_duplicate_flag": 10147,
+        "invalid_invoice_date_flag": 0,
+        "invalid_quantity_flag": 0,
+        "invalid_unit_price_flag": 0,
+        "negative_quantity_flag": 10624,
+        "negative_unit_price_flag": 2,
+        "required_field_review_flag": 0,
+        "zero_quantity_flag": 0,
+        "zero_unit_price_flag": 2515
+      }
+    },
+    "missing": {
+      "cancellation_coded_flag": 0,
+      "country": 0,
+      "customer_id": 243007,
+      "customer_id_missing_flag": 0,
+      "description": 4382,
+      "description_missing_flag": 0,
+      "exact_duplicate_flag": 0,
+      "invalid_invoice_date_flag": 0,
+      "invalid_quantity_flag": 0,
+      "invalid_unit_price_flag": 0,
+      "invoice_date": 0,
+      "invoice_no": 0,
+      "line_total": 0,
+      "negative_quantity_flag": 0,
+      "negative_unit_price_flag": 0,
+      "quantity": 0,
+      "required_field_review_flag": 0,
+      "source_country": 0,
+      "source_customer_id": 243007,
+      "source_description": 4382,
+      "source_excel_row": 0,
+      "source_invoice_date": 0,
+      "source_invoice_no": 0,
+      "source_quantity": 0,
+      "source_row_id": 0,
+      "source_stock_code": 0,
+      "source_unit_price": 0,
+      "source_worksheet": 0,
+      "stock_code": 0,
+      "transaction_status": 0,
+      "unit_price": 0,
+      "zero_quantity_flag": 0,
+      "zero_unit_price_flag": 0
+    },
+    "recorded_pytest": {
+      "failed": 0,
+      "passed": 7,
+      "skipped": 0
+    },
+    "sales_by_worksheet": {
+      "Year 2009-2010": 511565,
+      "Year 2010-2011": 530105
+    },
+    "sales_rows": 1041670,
+    "sample_rows": 805,
+    "sample_strata": {
+      "Year 2009-2010 | cancellation_coded_transaction": 100,
+      "Year 2009-2010 | normal_sale": 100,
+      "Year 2009-2010 | other_negative_quantity_transaction": 100,
+      "Year 2009-2010 | requires_review": 3,
+      "Year 2009-2010 | zero_price_transaction": 100,
+      "Year 2010-2011 | cancellation_coded_transaction": 100,
+      "Year 2010-2011 | normal_sale": 100,
+      "Year 2010-2011 | other_negative_quantity_transaction": 100,
+      "Year 2010-2011 | requires_review": 2,
+      "Year 2010-2011 | zero_price_transaction": 100
+    },
+    "statuses": {
+      "cancellation_coded_transaction": 19494,
+      "normal_sale": 1041670,
+      "other_negative_quantity_transaction": 3457,
+      "requires_review": 5,
+      "zero_price_transaction": 2745
+    }
+  },
+  "protected_input_sha256": {
+    "data/online_retail_II.xlsx": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+    "outputs/cleaned_transactions.csv": "5bf718b3fe35e47649b8692d80202c371e5b416963637a23c4c954d18aeb0e10",
+    "outputs/sales_analysis_ready.csv": "495b84f83319f2665c98f1d51f60f1dcdeb08b602e608e0e50e9953a97db2218",
+    "src/clean_data.py": "4f43c2e0ddd76634d89b9635f5a800376fb0c4519ce36b2644b2872765fefde2",
+    "src/inspect_data.py": "6f37eefed43476f5488553ed6f8238bd10ce8e2eaec68a799d1774487070ce3d"
+  },
+  "protected_inputs_unchanged": true
+}

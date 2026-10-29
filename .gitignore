@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+data/*.xlsx
+data/*.xls
+data/processed/
+outputs/
+*.py[cod]
+
+# Keep full transaction CSVs out of the public portfolio.
+portfolio/*.csv
+
+# Local environments, caches, secrets, editor files and temporary artifacts.
+.env
+.env.*
+!.env.example
+.cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+*.log
+*.tmp
+*.temp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
